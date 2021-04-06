@@ -1,8 +1,8 @@
 window.addEventListener('load', function(){
     new Glider(document.querySelector('.slider__lista'), {
         slidesToShow: 'auto',
-        itemWidth: 300,
-        slidesToScroll: 2,
+        itemWidth: 325,
+        slidesToScroll: 3,
         dots: '.slider__indicadores',
         arrows: {
             prev: '.slider__anterior',

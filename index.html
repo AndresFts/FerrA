@@ -13,16 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id="home">
         <div class="logo">
             <img src="recursos/logo.png" alt="logo de la empresa">
             <h2>Aconcagua</h2>
         </div>
         <div class="links">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Catalog</a>
-            <a href="#">About</a>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#about">About</a>
         </div>
     </nav>
 
@@ -32,6 +32,7 @@
     </header>
     
     <section class="filtros">
+        <div id="products"></div>
         <div class="filtros__container">
             <div class="filtros__card filtros__card1">herramientas</div>
             <div class="filtros__card filtros__card2">pintura</div>
@@ -42,7 +43,7 @@
     </section>
 
     <div class="middle">
-        <h2>La calidad es lo mas importante!</h2>
+        <h2 id="catalog">La calidad es lo mas importante!</h2>
     </div>
     
     <section class="slider">
@@ -82,7 +83,7 @@
         <div role="tablist" class="slider__indicadores"></div>
     </section>
 
-    <footer>
+    <footer id="about">
         <p>siguenos en las redes sociales | &copy; Todos los derechos reservados</p>
     </footer>
 

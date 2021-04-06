@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     width: 100%;
 }
@@ -83,6 +87,11 @@ header h1{
 header p{
     font-size: 20px;
     margin: 5px;
+}
+
+#products{
+    position: absolute;
+    bottom: 100px;
 }
 
 /* CARTAS DE TIPOS DE PRODUCTO */
