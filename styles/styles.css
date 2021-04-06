@@ -140,11 +140,20 @@ header p{
 
 .middle{
     padding: 30px;
-    background: #ddd;
+    background: url(../recursos/middle.jpg);
+    background-position: center;
+    background-attachment: fixed;
     height: 200px;
 
     display: flex;
     align-items: center;
+}
+
+.middle h2{
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
 }
 
 /* SLIDER DE CARTAS */
