@@ -262,9 +262,9 @@ header p{
 
 .slider__indicadores .glider-dot{
     width: 30px;
-    height: 8px;
-    margin: 20px 5px;
-    border-radius: 4px;
+    height: 5px;
+    margin: 25px 5px;
+    border-radius: 0;
     box-shadow: 0 0 1px 0.5px #f30;
     background: #f30;
 }
