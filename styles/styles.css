@@ -105,7 +105,14 @@ header p{
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 8px 8px 7px #0007;
+    box-shadow: 3px 3px 7px #000b;
+    transition: 0.5s ease-out;
+}
+
+.filtros__card:hover{
+    transform: translateY(-20px);
+    transform: scale(1.06);
+    box-shadow: 10px 10px 15px #0005;
 }
 
 .filtros__card1{
