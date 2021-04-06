@@ -45,7 +45,7 @@ body{
 
 nav{
     width: 100%;
-    height: 60px;
+    height: 70px;
     background: #f30000;
     color: #fff;
 
@@ -61,12 +61,13 @@ nav{
 }
 
 .logo img{
-    height: 50px;
+    height: 60px;
     margin-left: 5px;
 }
 
 .logo h2{
-    margin-left: 5px;
+    margin-left: 10px;
+    font-size: 30px;
 }
 
 .links{
@@ -79,8 +80,9 @@ nav{
 }
 
 .links a{
+    font-size: 18px;
     text-decoration: none;
-    line-height: 60px;
+    line-height: 70px;
     color: #fff;
     background: #790000;
     padding: 0 50px;
@@ -142,6 +144,7 @@ header p{
 .productos__card{
     background: #bbb;
     background-size: cover;
+    background-position: center;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 3px 3px 7px #000b;
@@ -158,12 +161,17 @@ header p{
 }
 .c2{
     grid-area: c2;
+    background-image: url(../recursos/pinturas.jpg);
 }
 .c3{
     grid-area: c3;
+    background-image: url(../recursos/tuberia.jpg);
+
 }
 .c4{
     grid-area: c4;
+    background-image: url(../recursos/herramientas.jpg);
+
 }
 .c5{
     grid-area: c5;
