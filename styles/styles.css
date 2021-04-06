@@ -30,6 +30,7 @@ nav{
 
 .logo img{
     height: 50px;
+    margin-left: 5px;
 }
 
 .logo h2{
@@ -61,10 +62,9 @@ nav{
 /* HEADER */
 
 header{
-    height: 500px;
+    height: 550px;
     color: #fff;
     background: #000c;
-    background: -webkit-linear-gradient(to right, #000c, #000c);
     background: linear-gradient(to right, #000c, #000c), url(../recursos/header.jpg);
 
     display: flex;
@@ -89,7 +89,7 @@ header p{
     margin: auto;
     width: 80%;
     position: relative;
-    top: -25px;
+    top: -40px;
 
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -141,6 +141,8 @@ header p{
 .middle{
     padding: 30px;
     background: url(../recursos/middle.jpg);
+    background: #ff07;
+    background: linear-gradient(to top, #ff8, #f307, #000a), url(../recursos/middle.jpg);
     background-position: center;
     background-attachment: fixed;
     height: 200px;
