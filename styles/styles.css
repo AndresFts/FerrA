@@ -175,6 +175,8 @@ header p{
 }
 .c5{
     grid-area: c5;
+    background-image: url(../recursos/otros_casa.jpg);
+
 }
 
 .productos__card h3{
@@ -305,7 +307,7 @@ header p{
     cursor: pointer;
     font-size: 20px;
     text-align: center;
-    background: #0001;
+    background: #0002;
     color: #000;
     z-index: 100;
 }
