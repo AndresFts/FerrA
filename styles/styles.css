@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+}
+
+/* NAVEGACION */
+
+nav{
+    width: 100%;
+    height: 60px;
+    background: #f30000;
+    color: #fff;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.logo h2{
+    margin-left: 5px;
+}
+
+.links{
+    background: #000;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links a{
+    text-decoration: none;
+    line-height: 60px;
+    color: #fff;
+    background: #790000;
+    padding: 0 50px;
+}
+
+.links a:hover{
+    background: #962121;
+    text-decoration: underline;
+}
+
+/* HEADER */
+
+header{
+    height: 500px;
+    color: #fff;
+    background: #000c;
+    background: -webkit-linear-gradient(to right, #000c, #000c);
+    background: linear-gradient(to right, #000c, #000c), url(../recursos/header.jpg);
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    font-size: 50px;
+    margin: 5px;
+}
+
+header p{
+    font-size: 20px;
+    margin: 5px;
+}
+
+/* CARTAS DE TIPOS DE PRODUCTO */
+
+.filtros__container{
+    margin: auto;
+    width: 80%;
+    position: relative;
+    top: -25px;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 300px 200px;
+    grid-gap: 30px;
+    grid-template-areas: 
+    "c1 c1 c2 c2 c3 c3"
+    "c4 c4 c4 c5 c5 c5";
+}
+
+.filtros__card{
+    background: #bbb;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 8px 8px 7px #0007;
+}
+
+.filtros__card1{
+    grid-area: c1;
+    background: #f00;
+}
+.filtros__card2{
+    grid-area: c2;
+    background: #0f0;
+}
+.filtros__card3{
+    grid-area: c3;
+    background: #0af;
+}
+.filtros__card4{
+    grid-area: c4;
+    background: #b0f;
+}
+.filtros__card5{
+    grid-area: c5;
+    background: #ff0;
+}
+
+/* MIDDLE */
+
+.middle{
+    padding: 30px;
+    background: #ddd;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+}
+
+/* SLIDER DE CARTAS */
+
+.slider{
+    padding-top: 1px;
+    /* background: #191c00; */
+}
+
+.slider h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0 30px 0;
+    color: #f30;
+}
+
+.slider__lista{
+    padding: 10px;
+    background: #f30;
+}
+
+.lista__card{
+    background: #fff;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 7px 3px 5px #ff03;
+    cursor: pointer;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.lista__card:hover{
+    box-shadow: 0 0 5px 3px #ff0;
+}
+
+.lista__card img{
+    max-height: 200px;
+}
+
+.card__name{
+    margin: 3px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card__precio{
+    font-weight: 900;
+    color: #f30
+}
+
+/* SLIDER__BOTONES */
+
+.slider__container{
+    position: relative;
+}
+
+.slider__anterior,
+.slider__siguiente{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 100%;
+    border: none;
+    outline: none;
+    top: 0;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    background: #0001;
+    color: #000;
+    z-index: 100;
+}
+
+.slider__anterior:hover,
+.slider__siguiente:hover{
+    background: #000a;
+    color: #fff;
+}
+
+.slider__anterior{
+	left: 0;
+}
+
+.slider__siguiente{
+    right: 0;
+}
+
+.slider__lista {
+	overflow: hidden;
+}
+
+.slider__indicadores .glider-dot{
+    width: 30px;
+    height: 8px;
+    margin: 20px 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 0.5px #f30;
+    background: #f30;
+}
+
+.slider__indicadores .glider-dot:hover{
+    background: #fa0;
+}
+
+.slider__indicadores .glider-dot.active{
+    background: #ff0;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 200px;
+    background: #000;
+    color: #fff;
+    padding: 20px 5px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles/glider.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="recursos/logo.png" alt="logo de la empresa">
+            <h2>Aconcagua</h2>
+        </div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Catalog</a>
+            <a href="#">About</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="header__h1">TODO LO QUE NECESITAS AQUÍ</h1>
+        <p class="header__h2">Revisa nuestro stock y planea tu compra desde tu casa!</p>
+    </header>
+    
+    <section class="filtros">
+        <div class="filtros__container">
+            <div class="filtros__card filtros__card1">1</div>
+            <div class="filtros__card filtros__card2">2</div>
+            <div class="filtros__card filtros__card3">3</div>
+            <div class="filtros__card filtros__card4">4</div>
+            <div class="filtros__card filtros__card5">5</div>
+        </div>
+    </section>
+
+    <div class="middle">
+        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+    </div>
+    
+    <section class="slider">
+        <h2>OFERTAS</h2>
+        <div class="slider__container">
+
+            <button class="slider__anterior" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="slider__lista">
+                <div class="lista__card">
+                    <img src="recursos/producto1.png" alt="">
+                    <p class="card__name">Un producto en destaque</p>
+                    <p class="card__precio">$3.250</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/producto2.png" alt="">
+                    <p class="card__name">Un producto en destaque</p>
+                    <p class="card__precio">$3.250</p>
+                </div>
+                <div class="lista__card">3</div>
+                <div class="lista__card">4</div>
+                <div class="lista__card">5</div>
+                <div class="lista__card">6</div>
+                <div class="lista__card">7</div>
+                <div class="lista__card">8</div>
+                <div class="lista__card">9</div>
+                <div class="lista__card">10</div>
+            </div>
+
+            <button class="slider__siguiente" aria-label="siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div role="tablist" class="slider__indicadores"></div>
+    </section>
+
+    <footer>
+        <p>siguenos en las redes sociales | &copy; Todos los derechos reservados</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/glider.js"></script>
+    <script src="scripts/fontawesome.js"></script>
+    <script src="scripts/code.js"></script>
+</body>
+</html>
