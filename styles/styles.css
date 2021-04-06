@@ -65,7 +65,9 @@ header{
     height: 550px;
     color: #fff;
     background: #000c;
-    background: linear-gradient(to right, #000c, #000c), url(../recursos/header.jpg);
+    background: linear-gradient(to top, #000, #000c, #0008, #0000), url(../recursos/header.jpg);
+    background-position: center;
+    background-size: cover;
 
     display: flex;
     flex-flow: column wrap;
