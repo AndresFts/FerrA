@@ -209,7 +209,7 @@ header p{
 
 .c1:hover h3,.c2:hover h3,.c3:hover h3{  /* Los primeros 3 elementos del grid al pasar el cursor */
     opacity: 1;
-    transform: translateY(-140px);
+    transform: translateY(-130px);
 }
 
 .c4:hover h3, .c5:hover h3{
