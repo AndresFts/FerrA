@@ -7,25 +7,17 @@
 
 /* PROPIEDADES */
 
-.rojo{
-    background: #f00;
-}
+.brojo{background: #f00;}
 
-.verde{
-    background: #0f0;
-}
+.bverde{background: #0f0;}
 
-.azul{
-    background: #0bf;
-}
+.bazul{background: #0bf;}
 
-.morado{
-    background: #b0f;
-}
+.bmorado{background: #b0f;}
 
-.amarillo{
-    background: #ff0;
-}
+.bamarillo{background: #ff0;}
+
+.crojo{color: #f00;}
 
 /* --------------------------------------- */
 /*                                         */
@@ -99,8 +91,8 @@ header{
     height: 550px;
     color: #fff;
     background: #000c;
-    background: linear-gradient(to top, #000, #000c, #0008, #0000), url(../recursos/header.jpg);
-    background-position: center;
+    background: linear-gradient(to top, #000, #0007, #0003, #0000), url(../recursos/header.jpg);
+    background-position: bottom;
     background-size: cover;
 
     display: flex;
@@ -142,11 +134,11 @@ header p{
 }
 
 .productos__card{
-    background: #bbb;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
     border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
     box-shadow: 3px 3px 7px #000b;
     transform: scale(1);
     transition: 0.3s ease-out;
@@ -242,20 +234,19 @@ header p{
 /* SLIDER DE CARTAS */
 
 .slider{
-    padding-top: 1px;
-    /* background: #191c00; */
+    margin-bottom: 70px;
 }
 
 .slider h2{
     text-align: center;
     font-size: 40px;
     margin: 50px 0 30px 0;
-    color: #f30;
+    color: #f20;
 }
 
 .slider__lista{
     padding: 10px;
-    background: #f30;
+    background: #f20;
 }
 
 .lista__card{
@@ -263,7 +254,7 @@ header p{
     margin: 0 15px;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 7px 3px 5px #ff03;
+    box-shadow: 7px 3px 5px #900;
     cursor: pointer;
 
     display: flex;
@@ -347,10 +338,47 @@ header p{
     background: #ff0;
 }
 
+/* ABOUT */
+
+#about{
+    height: 100vh;
+    background: #ddd;
+    display: flex;
+}
+
+.about__textos{
+    width: 50%;
+}
+
+.about__textos h2{
+    margin: 75px 0 30px 75px;
+    color: #000;
+    font-size: 60px;
+}
+
+.about__textos p{
+    font-size: 35px;
+    margin-left: 75px;
+}
+
+.about__image{
+    margin-top: 200px;
+    width: 750px;
+}
+
+.about__image img{
+    width: 100%;
+}
+
+.about__image p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
 /* FOOTER */
 
 footer{
-    margin-top: 200px;
     background: #000;
     color: #fff;
     padding: 20px 5px;
