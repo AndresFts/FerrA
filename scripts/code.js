@@ -15,11 +15,11 @@ window.onload = function(){
     
 }
 
-removeLoadScreen = ()=> {
+delPDC = ()=> {
     document.querySelector("body").removeChild(document.getElementById("pantallaDeCarga"));
-};
+}
 
 window.onload = ()=>{
     document.getElementById("pantallaDeCarga").classList.add("desaparecer"),
-    setTimeout(removeLoadScreen, 2000)
+    setTimeout(delPDC, 2000)
 };
