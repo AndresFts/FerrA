@@ -19,6 +19,8 @@ delPDC = ()=> {
     document.querySelector("body").removeChild(document.getElementById("pantallaDeCarga"));
 }
 
+alert("hola");
+
 window.onload = ()=>{
     document.getElementById("pantallaDeCarga").classList.add("desaparecer"),
     setTimeout(delPDC, 2000)
