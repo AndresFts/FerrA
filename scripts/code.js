@@ -10,3 +10,16 @@ window.addEventListener('load', function(){
         }
     });
 });
+
+window.onload = function(){
+    
+}
+
+delPDC = ()=> {
+    document.querySelector("body").removeChild(document.getElementById("pantallaDeCarga"));
+}
+
+window.onload = ()=>{
+    document.getElementById("pantallaDeCarga").classList.add("desaparecer"),
+    setTimeout(delPDC, 2000)
+};

@@ -5,6 +5,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.desaparecer{
+    transition: 1s;
+    opacity: 0;
+    z-index: -1 !important;
+}
+
 /* PROPIEDADES */
 
 .brojo{background: #f00;}
@@ -212,16 +218,12 @@ header p{
 /* MIDDLE */
 
 .middle{
-    padding: 30px;
-    background: url(../recursos/middle.jpg);
-    background: #ff07;
-    background: linear-gradient(to top, #ff8, #f307, #000a), url(../recursos/middle.jpg);
+    margin-top: 40px;
+    background: url(../recursos/middle3.jpg);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 200px;
-
-    display: flex;
-    align-items: center;
 }
 
 .middle h2{
@@ -229,6 +231,10 @@ header p{
     font-size: 40px;
     color: #fff;
     text-shadow: 3px 3px 3px #000;
+    height: 100%;
+    background: linear-gradient(to right, #000, #000b, #0005);
+    line-height: 200px;
+    padding-left: 50px;
 }
 
 /* SLIDER DE CARTAS */
