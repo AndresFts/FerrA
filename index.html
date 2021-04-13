@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferretería Aconcagua</title>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="styles/glider.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="home">
+        <div class="logo">
+            <img src="recursos/logo.png" alt="logo de la empresa">
+            <h2>Aconcagua</h2>
+        </div>
+        <div class="links">
+            <a href="#home">inicio</a>
+            <a href="#products">Productos</a>
+            <a href="#catalog">Ofertas</a>
+            <a href="#about">Nosotros</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="header__h1">ENCUENTRA TODO LO QUE NECESITAS AQUÍ</h1>
+        <p class="header__h2">Revisa nuestro stock y planea tu compra <span class="crojo">desde tu casa!</span></p>
+    </header>
+    
+    <section class="productos">
+        <div id="products"></div>
+        <div class="productos__container">
+            <div class="productos__card c1">
+                <h3><a href="rutas/productos/index.html#tornilleria">Tornillería</a></h3>
+                <div class="card__filtro brojo"></div>
+            </div>
+            <div class="productos__card c2">
+                <h3><a href="rutas/productos/index.html#pinturas">Pinturas</a></h3>
+                <div class="card__filtro bverde"></div>
+            </div>
+            <div class="productos__card c3">
+                <h3><a href="rutas/productos/index.html#tuberia">Tubería</a></h3>
+                <div class="card__filtro bazul"></div>
+            </div>
+            <div class="productos__card c4">
+                <h3><a href="rutas/productos/index.html#herramientas">Herramientas</a></h3>
+                <div class="card__filtro bmorado"></div>
+            </div>
+            <div class="productos__card c5">
+                <h3><a href="rutas/productos/index.html#todos">Todos los productos</a></h3>
+                <div class="card__filtro bamarillo"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="middle">
+        <h2 id="catalog">La calidad es lo mas importante!</h2>
+    </div>
+    
+    <section class="slider">
+        <h2>OFERTAS</h2>
+        <div class="slider__container">
+
+            <button class="slider__anterior" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="slider__lista">
+                <div class="lista__card">
+                    <img src="recursos/destaques/martillo1.png" alt="">
+                    <p class="card__name">Martillo Bellota</p>
+                    <p class="card__precio">$5.900</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/tornillo.jpg" alt="">
+                    <p class="card__name">Tornillos Negros</p>
+                    <p class="card__precio">$200</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/manguera.png" alt="">
+                    <p class="card__name">Manguera 30m</p>
+                    <p class="card__precio">$14.490</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/Cinta_ductTape.png" alt="">
+                    <p class="card__name">Cinta Pegante Multiuso</p>
+                    <p class="card__precio">$3.490</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/destornillador.png" alt="">
+                    <p class="card__name">Destornillador de Estria</p>
+                    <p class="card__precio">$9.990</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/tubo_roscada.png" alt="">
+                    <p class="card__name">Tubo Roscada 90°</p>
+                    <p class="card__precio">$2.490</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/rollo_cobre.png" alt="">
+                    <p class="card__name">Rollo de Cobre</p>
+                    <p class="card__precio">$12.000</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/ampolleta.png" alt="">
+                    <p class="card__name">Ampolleta Económica</p>
+                    <p class="card__precio">$3.250</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/gotita.jpg" alt="">
+                    <p class="card__name">LA GOTITA MÁGICA</p>
+                    <p class="card__precio">$9.999.999</p>
+                </div>
+                <div class="lista__card">
+                    <img src="recursos/destaques/martillo2.png" alt="">
+                    <p class="card__name">Martillo Portatil</p>
+                    <p class="card__precio">$3.250</p>
+                </div>
+            </div>
+
+            <button class="slider__siguiente" aria-label="siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div role="tablist" class="slider__indicadores"></div>
+    </section>
+
+    <section id="about">
+        <div class="about__textos">
+            <h2>Sobre nosotros</h2>
+            <p class="crojo">sección en construcción</p>
+            <p>Esperando feedbacks para continuar</p>
+        </div>
+        <div class="about__image">
+            <img src="recursos/en_construccion.png" alt="seccion en construcción">
+            <p>Estamos trabajando en ello. Sea paciente</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>siguenos en las redes sociales | &copy; Todos los derechos reservados</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="scripts/glider.js"></script>
+    <script src="scripts/fontawesome.js"></script>
+    <script src="scripts/code.js"></script>
+</body>
+</html>

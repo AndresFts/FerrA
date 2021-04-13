@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* PROPIEDADES */
+
+.oculto{
+    display: none !important;
+}
+
+.oculto2{
+    display: none;
+}
+
+/* --------------------------------------- */
+/*                                         */
+/*          ESTILOS PERSONALIZADOS         */
+/*                                         */
+/* --------------------------------------- */
+
+.contenedor{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#search{
+    margin: 30px 20px;
+    width: 50%;
+    padding: 15px;
+    outline: none;
+    border: 1px dashed #000;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#search:focus{
+    box-shadow: 0 0 0 1px #000;
+}
+
+select{
+    padding: 10px;
+    outline: none;
+    background: #dfd;
+}
+
+ul{
+    margin: 0px 5px 20px;
+}
+
+
+ul > li{
+    background: #ddf;
+    padding: 10px;
+    outline: .3px solid #33a;
+    font-size: 25px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
