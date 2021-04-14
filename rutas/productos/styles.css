@@ -39,12 +39,28 @@
 
 #search:focus{
     box-shadow: 0 0 0 1px #000;
+    border-style: solid;
 }
 
 select{
-    padding: 10px;
+    width: 200px;
+    padding: 7px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    box-shadow: 3px 3px 3px #aaa;
     outline: none;
-    background: #dfd;
+}
+
+/* [value="tornilleria"]{background: #f00}
+[value="pinturas"]{background: #0f0}
+[value="tuberia"]{background: #0df}
+[value="herramientas"]{background: #d0f}
+[value="todos"]{background: #ff0} */
+
+option{
+    background: #666;
+    color: #fff;
 }
 
 ul{

@@ -17,6 +17,24 @@ function filtrarPorTipo(){
         }
     }
 }
+function updateColor(){
+    switch (select.value){
+        case "tornilleria":
+            select.style.background = "#a00";
+            break;
+        case "pinturas":
+            select.style.background = "#070";
+            break;
+        case "tuberia":
+            select.style.background = "#00a";
+            break;
+        case "herramientas":
+            select.style.background = "#608";
+            break;
+        default:
+            select.style.background = "#880";
+    }
+}
 
 //Filtrar elementos por el buscador
 
@@ -35,24 +53,37 @@ document.addEventListener("keyup", ()=>{
 
 window.addEventListener("load", ()=>{
     let target = document.querySelector(":target");
-    
-    switch (target.id){
 
-        case "tornilleria":
-            document.getElementById("tornilleria").selected = "selected";
-            break;
-        case "pinturas":
-            document.getElementById("pinturas").selected = "selected";
-            break;
-        case "tuberia":
-            document.getElementById("tuberia").selected = "selected";
-            break;
-        case "herramientas":
-            document.getElementById("herramientas").selected = "selected";
-            break;
-        default:
-            document.getElementById("todos").selected = "selected";    }
+    if(target){
+        switch (target.id){
+            case "tornilleria":
+                document.getElementById("tornilleria").selected = "selected";
+                select.style.background = "#a00"
+                break;
+            case "pinturas":
+                document.getElementById("pinturas").selected = "selected";
+                select.style.background = "#070"
+                break;
+            case "tuberia":
+                document.getElementById("tuberia").selected = "selected";
+                select.style.background = "#00a"
+                break;
+            case "herramientas":
+                document.getElementById("herramientas").selected = "selected";
+                select.style.background = "#608"
+                break;
+            default:
+                document.getElementById("todos").selected = "selected";
+                console.log("holaisos")
+                select.style.background = "#880"
+        }
+    }else{
+        select.style.background = "#880"
+    }
     filtrarPorTipo()
 });
 
-select.onclick = ()=> filtrarPorTipo();
+select.onclick = ()=> {
+    filtrarPorTipo();
+    updateColor("ff0");
+};
