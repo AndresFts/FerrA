@@ -12,18 +12,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav id="home">
+<body id="inicio">
+    <nav>
         <div class="logo">
             <img src="recursos/logo.png" alt="logo de la empresa">
-            <h2>Aconcagua</h2>
+            <h1>Aconcagua</h1>
         </div>
-        <div class="links">
-            <a href="#home">inicio</a>
-            <a href="#products">Productos</a>
-            <a href="#catalog">Ofertas</a>
-            <a href="#about">Nosotros</a>
+        <div class="nav__links">
+            <ul>
+                <li><a href="#inicio" class="active">inicio</a></li>
+                <li><a href="#categorias">categorías</a></li>
+                <li><a href="#destacados">destacados</a></li>
+                <li><a href="#nosotros">nosotros</a></li>
+            </ul>
         </div>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
     </nav>
 
     <header>
@@ -32,7 +35,7 @@
     </header>
     
     <section class="productos">
-        <div id="products"></div>
+       <div id="categorias"></div>
         <div class="productos__container">
             <div class="productos__card c1">
                 <h3><a href="rutas/productos/index.html#tornilleria">Tornillería</a></h3>
@@ -58,18 +61,18 @@
     </section>
 
     <div class="middle">
-        <h2 id="catalog">La calidad es lo mas importante!</h2>
+        <h2>La calidad es lo mas importante!</h2>
     </div>
-    
-    <section class="slider">
-        <h2>OFERTAS</h2>
-        <div class="slider__container">
+    <section class="destacados">
+        <div id="destacados"></div>
+        <h2>EN DESTAQUE</h2>
+        <div class="destacados__container">
 
-            <button class="slider__anterior" aria-label="Anterior">
+            <button class="destacados__anterior" aria-label="Anterior">
                 <i class="fas fa-chevron-left"></i>
             </button>
 
-            <div class="slider__lista">
+            <div class="destacados__lista">
                 <div class="lista__card">
                     <img src="recursos/destaques/martillo1.png" alt="">
                     <p class="card__name">Martillo Bellota</p>
@@ -122,28 +125,34 @@
                 </div>
             </div>
 
-            <button class="slider__siguiente" aria-label="siguiente">
+            <button class="destacados__siguiente" aria-label="siguiente">
                 <i class="fas fa-chevron-right"></i>
             </button>
         </div>
 
-        <div role="tablist" class="slider__indicadores"></div>
+        <div role="tablist" class="destacados__indicadores"></div>
     </section>
 
-    <section id="about">
-        <div class="about__textos">
+    <section class="nosotros__container">
+        <div id="nosotros"></div>
+        <div class="nosotros__textos">
             <h2>Sobre nosotros</h2>
             <p class="crojo">sección en construcción</p>
             <p>Esperando feedbacks para continuar</p>
         </div>
-        <div class="about__image">
+        <div class="nosotros__image">
             <img src="recursos/en_construccion.png" alt="seccion en construcción">
             <p>Estamos trabajando en ello. Sea paciente</p>
         </div>
     </section>
 
     <footer>
-        <p>siguenos en las redes sociales | &copy; Todos los derechos reservados</p>
+        <p>Ferretería Aconcagua | &copy; Todos los derechos reservados</p>
+        <div class="iconos">
+            <a href="https://www.instagram.com/ferreteriaconcagua/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=56123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/ferreteria.aconcagua.5" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
     </footer>
 
     <!-- SCRIPTS -->
