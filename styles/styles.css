@@ -15,9 +15,9 @@
 
 .brojo{background: #f00;}
 
-.bverde{background: #0f0;}
+.bverde{background: #0e0;}
 
-.bazul{background: #0bf;}
+.bazul{background: #07f;}
 
 .bmorado{background: #b0f;}
 
@@ -37,412 +37,1618 @@ html
     cursor: default;
 }
 
-/* NAVEGACION */
-nav
-{
-    position: sticky;
-    height: 60px;
-    top: 0;
-    left: 0;
-    padding: 5px 3px 5px 15px;
-    background: #e20;
-    width: 100%;
-    z-index: 900;
-}
-
-.logo{
-    float: left;
-    display: flex;
-}
-
-.logo img{
-    width: 50px;
-}
-.logo h1{
-    margin: 0 10px;
-    color: #fff;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.nav__links{
-    float: right;
-}
-
-.nav__links > ul{
-    display: flex;
-}
-
-.nav__links > ul > li{
-    list-style: none;
-}
-
-.nav__links > ul > li > a{
-    padding: 0 25px;
-    margin: 0 2.6px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 17px;
-    text-decoration: none;
-    display: block;
-    color: #fff;
-}
-
-.nav__links > ul > li > a:hover{
-    background: #0004;
-}
-.nav__links > ul > li > a.active{
-    background: #0008;
-}
-
-.menu-toggle{
-    color: #fff;
-    line-height: 50px;
-    font-size: 24px;
-    float: right;
-    cursor: pointer;
-    display: none;
-}
-
-/* HEADER */
-
-header{
-    height: 600px;
-    color: #fff;
-    background: #000c;
-    background: linear-gradient(to top, #000, #0007, #0003, #0000), url(../recursos/header/header_big.jpg);
-    background-position: bottom;
-    background-size: cover;
-
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-header h1{
-    font-size: 50px;
-    margin: 5px;
-    text-align: center;
-}
-
-header p{
-    font-size: 20px;
-    margin: 5px;
-    text-align: center;
-}
-
-/* CARTAS DE TIPOS DE PRODUCTO */
-
-#categorias{
-    position: relative;
-    top: -120px;
-    height: 1px;
-}
-
-.productos__container{
-    margin: auto;
-    width: 80%;
-    position: relative;
-    top: -30px;
-
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 260px 200px;
-    grid-gap: 30px;
-    grid-template-areas: 
-    "c1 c1 c2 c2 c3 c3"
-    "c4 c4 c4 c5 c5 c5";
-}
-
-.productos__card{
-    border-radius: 10px;
-    background-position: center;
-    background-size: cover;
-    cursor: pointer;
-    overflow: hidden;
-    box-shadow: 3px 3px 7px #000b;
-    transform: scale(1);
-    transition: 0.3s ease-out;
-
-    display: flex;
-    justify-content: center;
-}
-
-.c1{
-    grid-area: c1;
-    background-image: url(../recursos/tornilleria.jpg);
-}
-.c2{
-    grid-area: c2;
-    background-image: url(../recursos/pinturas.jpg);
-}
-.c3{
-    grid-area: c3;
-    background-image: url(../recursos/tuberia.jpg);
+@media only screen and (min-width: 350){
 
 }
-.c4{
-    grid-area: c4;
-    background-image: url(../recursos/herramientas.jpg);
+@media only screen and (min-width: 500px){
+    /* NAVEGACION */
+    nav
+    {
+        position: sticky;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        background: #e20;
+        z-index: 900;
+    }
 
+    .logo{
+        float: left;
+        display: flex;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        margin: 0 10px;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .menu-toggle{
+        color: #fff;
+        line-height: 50px;
+        font-size: 24px;
+        float: right;
+        cursor: pointer;
+    }
+    .nav__links{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 60px;
+        left: -100%;
+        transition: .4s;
+    }
+    .nav__links.active{
+        left: 0;
+    }
+
+    .nav__links ul{
+        display: block;
+        text-align: center;
+    }
+    .nav__links > ul > li{
+        list-style: none;
+    }
+    .nav__links > ul > li > a{
+        border-bottom: 1px solid #0003;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+    }
+
+    .nav__links > ul > li > a:hover{
+        background: #0004;
+    }
+    .nav__links > ul > li > a.active{
+        background: #0008;
+    }
+
+    /* HEADER */
+
+    header{
+        height: 600px;
+        color: #fff;
+        background: #000c;
+        background: linear-gradient(to top, #000, #0007, #0003, #0000), url(../recursos/header.jpg);
+        background-position: bottom;
+        background-size: cover;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 45px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    header p{
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    /* CARTAS DE TIPOS DE PRODUCTO */
+
+    #categorias{
+        position: relative;
+        top: -120px;
+        height: 1px;
+    }
+
+    .productos__container{
+        margin: auto;
+        width: 90%;
+        position: relative;
+        top: -30px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 150px 150px 150px;
+        grid-gap: 19px;
+        grid-template-areas: 
+        "c1 c1 c1 c2 c2 c2"
+        "c3 c3 c4 c4 c4 c4"
+        "c3 c3 c5 c5 c5 c5";
+    }
+    .c1{
+        grid-area: c1;
+        background: #f00;
+        background: linear-gradient(to right, #f00c, #f00c), url(../recursos/tornilleria.jpg);
+    }
+    .c2{
+        grid-area: c2;
+        background: #0e0;
+        background: linear-gradient(to right, #0e0c, #0e0c), url(../recursos/pinturas.jpg);
+    }
+    .c3{
+        grid-area: c3;
+        background: #07f;
+        background: linear-gradient(to right, #07fc, #07fc), url(../recursos/tuberia.jpg);
+    }
+    .c4{
+        grid-area: c4;
+        background: #b0d;
+        background: linear-gradient(to right, #b0dc, #b0dc), url(../recursos/herramientas.jpg);
+    }
+    .c5{
+        grid-area: c5;
+        background: #ef0;
+        background: linear-gradient(to right, #ef0c, #ef0c), url(../recursos/otros_casa.jpg);
+    }
+    .productos__card{
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 3px 3px 7px #000b;
+        transition: 0.3s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productos__card:hover{
+        transform: scale(1.06);
+        box-shadow: 10px 10px 15px #0005;
+    }
+
+    .productos__card h3{
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    h3 > a{
+        color:#fff;
+        text-decoration: none;
+    }
+    /* MIDDLE */
+
+    .middle{
+        margin-top: 40px;
+        background: linear-gradient(to right, #000, #0000), url(../recursos/middle3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .middle h2{
+        background: none;
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 3px 3px 3px #000;
+        padding-left: 50px;
+    }
+
+    /* destacados DE CARTAS */
+
+    #destacados{
+        position: relative;
+        top: -60px;
+        height: 1px;
+    }
+
+    .destacados{
+        margin-bottom: 70px;
+    }
+
+    .destacados h2{
+        text-align: center;
+        font-size: 40px;
+        margin: 50px 0 30px 0;
+        color: #f20;
+    }
+
+    .destacados__lista{
+        padding: 10px;
+        background: #f20;
+    }
+
+    .lista__card{
+        background: #fff;
+        margin: 0 15px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 7px 3px 5px #900;
+        cursor: pointer;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .lista__card:hover{
+        box-shadow: 0 0 5px 3px #ff0;
+    }
+
+    .lista__card img{
+        max-height: 200px;
+    }
+
+    .card__name{
+        margin: 3px 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .card__precio{
+        font-weight: 900;
+        color: #f30
+    }
+
+    /* destacados__BOTONES */
+
+    .destacados__container{
+        position: relative;
+    }
+
+    .destacados__anterior,
+    .destacados__siguiente{
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 100%;
+        border: none;
+        outline: none;
+        top: 0;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        background: #0002;
+        color: #000;
+        z-index: 100;
+    }
+
+    .destacados__anterior:hover,
+    .destacados__siguiente:hover{
+        background: #000a;
+        color: #fff;
+    }
+
+    .destacados__anterior{
+        left: 0;
+    }
+
+    .destacados__siguiente{
+        right: 0;
+    }
+
+    .destacados__lista {
+        overflow: hidden;
+    }
+
+    .destacados__indicadores .glider-dot{
+        width: 30px;
+        height: 5px;
+        margin: 25px 5px;
+        border-radius: 0;
+        box-shadow: 0 0 1px 0.5px #f30;
+        background: #f30;
+    }
+
+    .destacados__indicadores .glider-dot:hover{
+        background: #fa0;
+    }
+
+    .destacados__indicadores .glider-dot.active{
+        background: #ff0;
+    }
+
+    /* NOSOTROS */
+
+    #nosotros{
+        position: relative;
+        top: -90px;
+    }
+    
+
+    .nosotros__container{
+        min-height: calc(100vh - 60px);
+        padding: 30px 15px 15px 15px;
+        background: #e6e6e6;
+
+        display: flex;
+        flex-flow: column;
+    }
+    .nosotros__textos{
+        width: 100%;
+    }
+
+    .nosotros__textos h2{
+        margin-bottom: 0;
+        color: #000;
+        font-size: 58px;
+    }
+
+    .nosotros__textos p{
+        font-size: 33px;
+    }
+
+    .nosotros__image{
+        width: 100%;
+        margin-top: 70px;
+        justify-content: space-between;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .nosotros__image img{
+        width: 320px;
+        max-width: 350px;
+        min-width: 230px;
+    }
+
+    .nosotros__image p{
+        width: 100%;
+        margin: 15px 0;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+    }
+    /* FOOTER */
+
+    footer{
+        height: 70px;
+        padding: 0 20px;
+        background: #000;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iconos{
+        width: 145px;
+        margin-left: 10px;
+        text-align: right;
+        font-size: 30px;
+        
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .iconos i{
+        margin: 0 5px;
+        color: #fff;
+    }    
 }
-.c5{
-    grid-area: c5;
-    background-image: url(../recursos/otros_casa.jpg);
+@media only screen and (min-width: 600px){
+    /* NAVEGACION */
+    nav
+    {
+        position: sticky;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        background: #e20;
+        z-index: 900;
+    }
 
+    .logo{
+        float: left;
+        display: flex;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        margin: 0 10px;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .menu-toggle{
+        color: #fff;
+        line-height: 50px;
+        font-size: 24px;
+        float: right;
+        cursor: pointer;
+    }
+    .nav__links{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 60px;
+        left: -100%;
+        transition: .4s;
+    }
+    .nav__links.active{
+        left: 0;
+    }
+
+    .nav__links ul{
+        display: block;
+        text-align: center;
+    }
+    .nav__links > ul > li{
+        list-style: none;
+    }
+    .nav__links > ul > li > a{
+        border-bottom: 1px solid #0003;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+    }
+
+    .nav__links > ul > li > a:hover{
+        background: #0004;
+    }
+    .nav__links > ul > li > a.active{
+        background: #0008;
+    }
+
+    /* HEADER */
+
+    header{
+        height: 600px;
+        color: #fff;
+        background: #000c;
+        background: linear-gradient(to top, #000, #0007, #0003, #0000), url(../recursos/header.jpg);
+        background-position: bottom;
+        background-size: cover;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 50px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    header p{
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    /* CARTAS DE TIPOS DE PRODUCTO */
+
+    #categorias{
+        position: relative;
+        top: -120px;
+        height: 1px;
+    }
+
+    .productos__container{
+        margin: auto;
+        width: 90%;
+        position: relative;
+        top: -30px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 150px 150px 150px;
+        grid-gap: 19px;
+        grid-template-areas: 
+        "c1 c1 c1 c2 c2 c2"
+        "c3 c3 c4 c4 c4 c4"
+        "c3 c3 c5 c5 c5 c5";
+    }
+    .c1{
+        grid-area: c1;
+        background: #f00;
+        background: linear-gradient(to right, #f00c, #f00c), url(../recursos/tornilleria.jpg);
+    }
+    .c2{
+        grid-area: c2;
+        background: #0e0;
+        background: linear-gradient(to right, #0e0c, #0e0c), url(../recursos/pinturas.jpg);
+    }
+    .c3{
+        grid-area: c3;
+        background: #07f;
+        background: linear-gradient(to right, #07fc, #07fc), url(../recursos/tuberia.jpg);
+    }
+    .c4{
+        grid-area: c4;
+        background: #b0d;
+        background: linear-gradient(to right, #b0dc, #b0dc), url(../recursos/herramientas.jpg);
+    }
+    .c5{
+        grid-area: c5;
+        background: #ef0;
+        background: linear-gradient(to right, #ef0c, #ef0c), url(../recursos/otros_casa.jpg);
+    }
+    .productos__card{
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 3px 3px 7px #000b;
+        transition: 0.3s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productos__card:hover{
+        transform: scale(1.06);
+        box-shadow: 10px 10px 15px #0005;
+    }
+
+    .productos__card h3{
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    h3 > a{
+        color:#fff;
+        text-decoration: none;
+    }
+    /* MIDDLE */
+
+    .middle{
+        margin-top: 40px;
+        background: linear-gradient(to right, #000, #0000), url(../recursos/middle3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .middle h2{
+        background: none;
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 3px 3px 3px #000;
+        padding-left: 50px;
+    }
+
+    /* destacados DE CARTAS */
+
+    #destacados{
+        position: relative;
+        top: -60px;
+        height: 1px;
+    }
+
+    .destacados{
+        margin-bottom: 70px;
+    }
+
+    .destacados h2{
+        text-align: center;
+        font-size: 40px;
+        margin: 50px 0 30px 0;
+        color: #f20;
+    }
+
+    .destacados__lista{
+        padding: 10px;
+        background: #f20;
+    }
+
+    .lista__card{
+        background: #fff;
+        margin: 0 15px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 7px 3px 5px #900;
+        cursor: pointer;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .lista__card:hover{
+        box-shadow: 0 0 5px 3px #ff0;
+    }
+
+    .lista__card img{
+        max-height: 200px;
+    }
+
+    .card__name{
+        margin: 3px 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .card__precio{
+        font-weight: 900;
+        color: #f30
+    }
+
+    /* destacados__BOTONES */
+
+    .destacados__container{
+        position: relative;
+    }
+
+    .destacados__anterior,
+    .destacados__siguiente{
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 100%;
+        border: none;
+        outline: none;
+        top: 0;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        background: #0002;
+        color: #000;
+        z-index: 100;
+    }
+
+    .destacados__anterior:hover,
+    .destacados__siguiente:hover{
+        background: #000a;
+        color: #fff;
+    }
+
+    .destacados__anterior{
+        left: 0;
+    }
+
+    .destacados__siguiente{
+        right: 0;
+    }
+
+    .destacados__lista {
+        overflow: hidden;
+    }
+
+    .destacados__indicadores .glider-dot{
+        width: 30px;
+        height: 5px;
+        margin: 25px 5px;
+        border-radius: 0;
+        box-shadow: 0 0 1px 0.5px #f30;
+        background: #f30;
+    }
+
+    .destacados__indicadores .glider-dot:hover{
+        background: #fa0;
+    }
+
+    .destacados__indicadores .glider-dot.active{
+        background: #ff0;
+    }
+
+    /* NOSOTROS */
+
+    #nosotros{
+        position: relative;
+        top: -90px;
+    }
+    
+
+    .nosotros__container{
+        min-height: calc(100vh - 60px);
+        padding: 30px 15px 15px 15px;
+        background: #e6e6e6;
+
+        display: flex;
+        flex-flow: column;
+    }
+    .nosotros__textos{
+        width: 100%;
+    }
+
+    .nosotros__textos h2{
+        margin-bottom: 0;
+        color: #000;
+        font-size: 58px;
+    }
+
+    .nosotros__textos p{
+        font-size: 33px;
+    }
+
+    .nosotros__image{
+        width: 100%;
+        margin-top: 70px;
+        justify-content: space-between;
+
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .nosotros__image img{
+        width: 320px;
+        max-width: 350px;
+        min-width: 230px;
+    }
+
+    .nosotros__image p{
+        width: 100%;
+        margin: auto;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: center;
+    }
+    /* FOOTER */
+
+    footer{
+        height: 70px;
+        padding: 0 20px;
+        background: #000;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iconos{
+        width: 145px;
+        text-align: right;
+        font-size: 30px;
+        
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+
+    .iconos i{
+        margin: 0 5px;
+        color: #fff;
+    }
+}
+@media only screen and (min-width: 750px){
+    /* NAVEGACION */
+    nav
+    {
+        position: sticky;
+        width: 100%;
+        height: 60px;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        background: #e20;
+        z-index: 900;
+    }
+
+    .logo{
+        float: left;
+        display: flex;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        margin: 0 10px;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .menu-toggle{
+        color: #fff;
+        line-height: 50px;
+        font-size: 24px;
+        float: right;
+        cursor: pointer;
+    }
+    .nav__links{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #333;
+        top: 60px;
+        left: -100%;
+        transition: .4s;
+    }
+    .nav__links.active{
+        left: 0;
+    }
+
+    .nav__links ul{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .nav__links > ul > li{
+        list-style: none;
+    }
+    .nav__links > ul > li > a{
+        border-bottom: 1px solid #0003;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+    }
+
+    .nav__links > ul > li > a:hover{
+        background: #0004;
+    }
+    .nav__links > ul > li > a.active{
+        background: #0008;
+    }
+
+    /* HEADER */
+
+    header{
+        height: 600px;
+        color: #fff;
+        background: #000c;
+        background: linear-gradient(to top, #000, #0007, #0003, #0000), url(../recursos/header.jpg);
+        background-position: bottom;
+        background-size: cover;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 50px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    header p{
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    /* CARTAS DE TIPOS DE PRODUCTO */
+
+    #categorias{
+        position: relative;
+        top: -120px;
+        height: 1px;
+    }
+
+    .productos__container{
+        margin: auto;
+        width: 90%;
+        position: relative;
+        top: -30px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 260px 200px;
+        grid-gap: 30px;
+        grid-template-areas: 
+        "c1 c1 c2 c2 c3 c3"
+        "c4 c4 c4 c5 c5 c5";
+    }
+    .c1{
+        grid-area: c1;
+        background: #f00;
+        background: linear-gradient(to right, #f00c, #f00c), url(../recursos/tornilleria.jpg);
+    }
+    .c2{
+        grid-area: c2;
+        background: #0e0;
+        background: linear-gradient(to right, #0e0c, #0e0c), url(../recursos/pinturas.jpg);
+    }
+    .c3{
+        grid-area: c3;
+        background: #07f;
+        background: linear-gradient(to right, #07fc, #07fc), url(../recursos/tuberia.jpg);
+    }
+    .c4{
+        grid-area: c4;
+        background: #b0d;
+        background: linear-gradient(to right, #b0dc, #b0dc), url(../recursos/herramientas.jpg);
+    }
+    .c5{
+        grid-area: c5;
+        background: #ef0;
+        background: linear-gradient(to right, #ef0c, #ef0c), url(../recursos/otros_casa.jpg);
+    }
+    .productos__card{
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 3px 3px 7px #000b;
+        transition: 0.3s;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productos__card:hover{
+        transform: scale(1.06);
+        box-shadow: 10px 10px 15px #0005;
+    }
+
+    .productos__card h3{
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    h3 > a{
+        color:#fff;
+        text-decoration: none;
+    }
+    /* MIDDLE */
+
+    .middle{
+        margin-top: 40px;
+        background: linear-gradient(to right, #000, #0000), url(../recursos/middle3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .middle h2{
+        background: none;
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 3px 3px 3px #000;
+        padding-left: 50px;
+    }
+
+    /* destacados DE CARTAS */
+
+    #destacados{
+        position: relative;
+        top: -60px;
+        height: 1px;
+    }
+
+    .destacados{
+        margin-bottom: 70px;
+    }
+
+    .destacados h2{
+        text-align: center;
+        font-size: 40px;
+        margin: 50px 0 30px 0;
+        color: #f20;
+    }
+
+    .destacados__lista{
+        padding: 10px;
+        background: #f20;
+    }
+
+    .lista__card{
+        background: #fff;
+        margin: 0 15px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 7px 3px 5px #900;
+        cursor: pointer;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .lista__card:hover{
+        box-shadow: 0 0 5px 3px #ff0;
+    }
+
+    .lista__card img{
+        max-height: 200px;
+    }
+
+    .card__name{
+        margin: 3px 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .card__precio{
+        font-weight: 900;
+        color: #f30
+    }
+
+    /* destacados__BOTONES */
+
+    .destacados__container{
+        position: relative;
+    }
+
+    .destacados__anterior,
+    .destacados__siguiente{
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 100%;
+        border: none;
+        outline: none;
+        top: 0;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        background: #0002;
+        color: #000;
+        z-index: 100;
+    }
+
+    .destacados__anterior:hover,
+    .destacados__siguiente:hover{
+        background: #000a;
+        color: #fff;
+    }
+
+    .destacados__anterior{
+        left: 0;
+    }
+
+    .destacados__siguiente{
+        right: 0;
+    }
+
+    .destacados__lista {
+        overflow: hidden;
+    }
+
+    .destacados__indicadores .glider-dot{
+        width: 30px;
+        height: 5px;
+        margin: 25px 5px;
+        border-radius: 0;
+        box-shadow: 0 0 1px 0.5px #f30;
+        background: #f30;
+    }
+
+    .destacados__indicadores .glider-dot:hover{
+        background: #fa0;
+    }
+
+    .destacados__indicadores .glider-dot.active{
+        background: #ff0;
+    }
+
+    /* NOSOTROS */
+
+    #nosotros{
+        position: relative;
+        top: -90px;
+    }
+    
+
+    .nosotros__container{
+        min-height: calc(100vh - 60px);
+        padding: 30px 15px 15px 15px;
+        background: #e6e6e6;
+
+        display: flex;
+        flex-flow: column;
+    }
+    .nosotros__textos{
+        width: 100%;
+    }
+
+    .nosotros__textos h2{
+        margin-bottom: 0;
+        color: #000;
+        font-size: 58px;
+    }
+
+    .nosotros__textos p{
+        font-size: 33px;
+    }
+
+    .nosotros__image{
+        width: 100%;
+        margin-top: 70px;
+        justify-content: space-between;
+
+        display: flex;
+        flex-flow: row-reverse wrap;
+        align-items: flex-start;
+    }
+
+    .nosotros__image img{
+        width: 320px;
+        max-width: 350px;
+        min-width: 230px;
+    }
+
+    .nosotros__image p{
+        width: 50%;
+        margin: 15px 0;
+        font-size: 28px;
+        font-weight: 500;
+        text-align: left;
+    }
+    /* FOOTER */
+
+    footer{
+        height: 70px;
+        padding: 0 20px;
+        background: #000;
+        color: #fff;
+        font-size: 20px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iconos{
+        font-size: 30px
+    }
+
+    .iconos i{
+        margin: 0 5px;
+        color: #fff;
+    }
+}
+@media only screen and (min-width: 1001px){
+    /* NAVEGACION */
+    nav
+    {
+        position: sticky;
+        height: 60px;
+        top: 0;
+        left: 0;
+        padding: 5px 3px 5px 15px;
+        background: #e20;
+        width: 100%;
+        z-index: 900;
+    }
+
+    .logo{
+        float: left;
+        display: flex;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        margin: 0 10px;
+        color: #fff;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .nav__links{
+        float: right;
+        position: inherit;
+        width: auto;
+        height: auto;
+        background: none;
+        transition: 0;
+    }
+
+    .nav__links > ul{
+        display: flex;
+    }
+
+    .nav__links > ul > li{
+        list-style: none;
+    }
+
+    .nav__links > ul > li > a{
+        padding: 0 25px;
+        margin: 0 2.6px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        border: none;
+    }
+
+    .nav__links > ul > li > a:hover{
+        background: #0004;
+    }
+    .nav__links > ul > li > a.active{
+        background: #0008;
+    }
+
+    .menu-toggle{
+        color: #fff;
+        line-height: 50px;
+        font-size: 24px;
+        float: right;
+        cursor: pointer;
+        display: none;
+    }
+
+    /* HEADER */
+
+    header{
+        height: 600px;
+        color: #fff;
+        background: #000c;
+        background: linear-gradient(to top, #000, #0007, #0003, #0000), url(../recursos/header.jpg);
+        background-position: bottom;
+        background-size: cover;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1{
+        font-size: 50px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    header p{
+        font-size: 20px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    /* CARTAS DE TIPOS DE PRODUCTO */
+
+    #categorias{
+        position: relative;
+        top: -120px;
+        height: 1px;
+    }
+
+    .productos__container{
+        margin: auto;
+        width: 80%;
+        position: relative;
+        top: -30px;
+
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 260px 200px;
+        grid-gap: 30px;
+        grid-template-areas: 
+        "c1 c1 c2 c2 c3 c3"
+        "c4 c4 c4 c5 c5 c5";
+    }
+
+    .productos__card{
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;
+        box-shadow: 3px 3px 7px #000b;
+        transform: scale(1);
+        transition: 0.3s ease-out;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .c1{
+        grid-area: c1;
+        background-image: url(../recursos/tornilleria.jpg);
+    }
+    .c2{
+        grid-area: c2;
+        background-image: url(../recursos/pinturas.jpg);
+    }
+    .c3{
+        grid-area: c3;
+        background-image: url(../recursos/tuberia.jpg);
+
+    }
+    .c4{
+        grid-area: c4;
+        background-image: url(../recursos/herramientas.jpg);
+
+    }
+    .c5{
+        grid-area: c5;
+        background-image: url(../recursos/otros_casa.jpg);
+
+    }
+
+    .productos__card h3{
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        color: #fff;
+        font-size: 35px;
+        font-weight: 600;
+        z-index: 10;
+        transition: .3s;
+    }
+
+    h3 > a{
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .card__filtro{
+        width: 100%;
+        height: 100%;
+        opacity: .65;
+        transition: .4s;
+    }
+
+    .productos__card:hover{
+        transform: scale(1.06);
+        box-shadow: 10px 10px 15px #0005;
+    }
+
+    .productos__card:hover .card__filtro{
+        opacity: .9;
+    }
+
+    .c1:hover h3,.c2:hover h3,.c3:hover h3{
+        opacity: 1;
+        transform: translateY(-110px);
+    }
+
+    .c4:hover h3, .c5:hover h3{
+        opacity: 1;
+        transform: translateY(-80px);
+    }
+
+    /* MIDDLE */
+
+    .middle{
+        margin-top: 40px;
+        background: linear-gradient(to right, #000, #0000), url(../recursos/middle3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 200px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .middle h2{
+        background: none;
+        font-weight: 900;
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 3px 3px 3px #000;
+        padding-left: 50px;
+    }
+
+    /* destacados DE CARTAS */
+
+    #destacados{
+        position: relative;
+        top: -60px;
+        height: 1px;
+    }
+
+    .destacados{
+        margin-bottom: 70px;
+    }
+
+    .destacados h2{
+        text-align: center;
+        font-size: 40px;
+        margin: 50px 0 30px 0;
+        color: #f20;
+    }
+
+    .destacados__lista{
+        padding: 10px;
+        background: #f20;
+    }
+
+    .lista__card{
+        background: #fff;
+        margin: 0 15px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 7px 3px 5px #900;
+        cursor: pointer;
+
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .lista__card:hover{
+        box-shadow: 0 0 5px 3px #ff0;
+    }
+
+    .lista__card img{
+        max-height: 200px;
+    }
+
+    .card__name{
+        margin: 3px 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .card__precio{
+        font-weight: 900;
+        color: #f30
+    }
+
+    /* destacados__BOTONES */
+
+    .destacados__container{
+        position: relative;
+    }
+
+    .destacados__anterior,
+    .destacados__siguiente{
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 100%;
+        border: none;
+        outline: none;
+        top: 0;
+        cursor: pointer;
+        font-size: 20px;
+        text-align: center;
+        background: #0002;
+        color: #000;
+        z-index: 100;
+    }
+
+    .destacados__anterior:hover,
+    .destacados__siguiente:hover{
+        background: #000a;
+        color: #fff;
+    }
+
+    .destacados__anterior{
+        left: 0;
+    }
+
+    .destacados__siguiente{
+        right: 0;
+    }
+
+    .destacados__lista {
+        overflow: hidden;
+    }
+
+    .destacados__indicadores .glider-dot{
+        width: 30px;
+        height: 5px;
+        margin: 25px 5px;
+        border-radius: 0;
+        box-shadow: 0 0 1px 0.5px #f30;
+        background: #f30;
+    }
+
+    .destacados__indicadores .glider-dot:hover{
+        background: #fa0;
+    }
+
+    .destacados__indicadores .glider-dot.active{
+        background: #ff0;
+    }
+
+    /* NOSOTROS */
+
+    #nosotros{
+        position: relative;
+        top: -120px;
+    }
+
+    .nosotros__container{
+        min-height: calc(100vh - 60px);
+        padding: 60px 30px 30px 30px;
+        background: #e6e6e6;
+
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .nosotros__textos{
+        width: 55%;
+    }
+
+    .nosotros__textos h2{
+        margin-bottom: 20px;
+        color: #000;
+        font-size: 58px;
+    }
+
+    .nosotros__textos p{
+        font-size: 33px;
+    }
+
+    .nosotros__image{
+        width: 45%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nosotros__image img{
+        width: 80%;
+        max-width: 350px;
+        min-width: 230px;
+    }
+
+    .nosotros__image p{
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    /* FOOTER */
+
+    footer{
+        height: 70px;
+        padding: 0 20px;
+        background: #000;
+        color: #fff;
+        font-size: 20px;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .iconos{
+        font-size: 30px
+    }
+
+    .iconos i{
+        margin: 0 5px;
+        color: #fff;
+    }
 }
 
-.productos__card h3{
-    color: #fff;
-    opacity: 0;
-    font-size: 35px;
-    font-weight: 600;
-    position: absolute;
-    z-index: 10;
-    bottom: 0;
-    transition: .3s;
-}
-
-h3 > a{
-    color:#fff;
-    text-decoration: none;
-}
-
-.card__filtro{
-    width: 100%;
-    height: 100%;
-    opacity: .65;
-    transition: .4s;
-}
-
-.productos__card:hover{
-    transform: scale(1.06);
-    box-shadow: 10px 10px 15px #0005;
-    align-items: center;
-}
-
-.productos__card:hover .card__filtro{
-    opacity: .9;
-}
-
-.c1:hover h3,.c2:hover h3,.c3:hover h3{  /* Los primeros 3 elementos del grid al pasar el cursor */
-    opacity: 1;
-    transform: translateY(-110px);
-}
-
-.c4:hover h3, .c5:hover h3{
-    opacity: 1;
-    transform: translateY(-80px);
-}
-
-/* MIDDLE */
-
-.middle{
-    margin-top: 40px;
-    background: url(../recursos/middle3.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 200px;
-}
-
-.middle h2{
-    font-weight: 900;
-    font-size: 40px;
-    color: #fff;
-    text-shadow: 3px 3px 3px #000;
-    height: 100%;
-    background: linear-gradient(to right, #000, #000b, #0005);
-    line-height: 200px;
-    padding-left: 50px;
-}
-
-/* destacados DE CARTAS */
-
-#destacados{
-    position: relative;
-    top: -60px;
-    height: 1px;
-}
-
-.destacados{
-    margin-bottom: 70px;
-}
-
-.destacados h2{
-    text-align: center;
-    font-size: 40px;
-    margin: 50px 0 30px 0;
-    color: #f20;
-}
-
-.destacados__lista{
-    padding: 10px;
-    background: #f20;
-}
-
-.lista__card{
-    background: #fff;
-    margin: 0 15px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 7px 3px 5px #900;
-    cursor: pointer;
-
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-.lista__card:hover{
-    box-shadow: 0 0 5px 3px #ff0;
-}
-
-.lista__card img{
-    max-height: 200px;
-}
-
-.card__name{
-    margin: 3px 0;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-.card__precio{
-    font-weight: 900;
-    color: #f30
-}
-
-/* destacados__BOTONES */
-
-.destacados__container{
-    position: relative;
-}
-
-.destacados__anterior,
-.destacados__siguiente{
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 100%;
-    border: none;
-    outline: none;
-    top: 0;
-    cursor: pointer;
-    font-size: 20px;
-    text-align: center;
-    background: #0002;
-    color: #000;
-    z-index: 100;
-}
-
-.destacados__anterior:hover,
-.destacados__siguiente:hover{
-    background: #000a;
-    color: #fff;
-}
-
-.destacados__anterior{
-	left: 0;
-}
-
-.destacados__siguiente{
-    right: 0;
-}
-
-.destacados__lista {
-	overflow: hidden;
-}
-
-.destacados__indicadores .glider-dot{
-    width: 30px;
-    height: 5px;
-    margin: 25px 5px;
-    border-radius: 0;
-    box-shadow: 0 0 1px 0.5px #f30;
-    background: #f30;
-}
-
-.destacados__indicadores .glider-dot:hover{
-    background: #fa0;
-}
-
-.destacados__indicadores .glider-dot.active{
-    background: #ff0;
-}
-
-/* NOSOTROS */
-
-#nosotros{
-    position: relative;
-    top: -60px;
-}
-
-.nosotros__container{
-    height: calc(100vh - 60px);
-    background: #e6e6e6;
-
-    display: flex;
-    flex-flow: row wrap;
-}
-.nosotros__textos{
-    width: 50%;
-}
-
-.nosotros__textos h2{
-    margin: 75px 0 30px 75px;
-    color: #000;
-    font-size: 60px;
-}
-
-.nosotros__textos p{
-    font-size: 35px;
-    margin-left: 75px;
-}
-
-.nosotros__image{
-    width: 50%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.nosotros__image img{
-    width: 90%;
-}
-
-.nosotros__image p{
-    text-align: center;
-    margin: 10px 0 50px 0;
-    font-size: 30px;
-    font-weight: 900;
-}
-/* FOOTER */
-
-footer{
-    height: 70px;
-    padding: 0 20px;
-    background: #000;
-    color: #fff;
-    font-size: 20px;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.iconos{
-    font-size: 30px
-}
-
-.iconos i{
-    margin: 0 5px;
-    color: #fff;
-}
 
 /*
 -------------------------------------
@@ -451,6 +1657,7 @@ footer{
 
 -------------------------------------
 */
+/*
 @media only screen and (max-width: 1000px){
     header{
         background: linear-gradient(to top, #000, #000a, #3005, #a005), url(../recursos/header/header_small.jpg);
@@ -490,4 +1697,44 @@ footer{
         padding: 0;
         margin: 0;
     }
+    .productos__container{
+        width: 90%;
+    }
+    #nosotros{
+        top: -90px;
+    }
+    .nosotros__container{
+        padding: 30px 15px 15px 15px;
+        flex-direction: column;
+    }
+    .nosotros__textos{
+        width: 100%;
+    }
+    .nosotros__textos h2{
+        margin-bottom: 0;
+    }
+    .nosotros__image{
+        width: 100%;
+        margin-top: 70px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nosotros__image img{
+        width: 320px;
+    }
+    .nosotros__image p{
+        max-width: 50%;
+        text-align: left;
+    }
 }
+
+@media only screen and (max-width: 500px){
+    .nosotros__textos h2{
+        font-size: 40px;
+    }
+    .nosotros__textos p{
+        font-size: 20px;
+    }
+}
+*/
