@@ -5,161 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
-    <title>Ferretería Aconcagua</title>
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="styles/glider.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Vivian Demy</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bc49e62ba5.js" crossorigin="anonymous"></script>
 </head>
 <body id="inicio">
-    <nav>
-        <div class="logo">
-            <img src="recursos/logo.png" alt="logo de la empresa">
-            <h1>Aconcagua</h1>
+    <menu>
+        <div class="perfil">
+            <div class="perfil__imagen"></div>
+            <h1>Vivian Muñoz</h1>
         </div>
-        <div class="nav__links">
-            <ul>
-                <li><a href="#inicio" class="active">inicio</a></li>
-                <li><a href="#categorias">categorías</a></li>
-                <li><a href="#destacados">destacados</a></li>
-                <li><a href="#nosotros">nosotros</a></li>
-            </ul>
-        </div>
-        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
-    </nav>
+        <ul>
+            <li>
+                <a href="#inicio">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="title">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="#resumen">
+                    <span class="icon"><i class="fas fa-user-graduate"></i></span>
+                    <span class="title">Resumen</span>
+                </a>
+            </li>
+            <li>
+                <a href="#galeria">
+                    <span class="icon"><i class="fas fa-image"></i></span>
+                    <span class="title">Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fas fa-comments"></i></span>
+                    <span class="title">Contacto</span>
+                </a>
+            </li>
+        </ul>
+    </menu>
+    <div class="container">
+        <header>
+            <h1>Vivian Muñoz</h1>
+            <p>Aqui va un eslogan chido</p>
+        </header>
+        <hr id="resumen">
+        <section class="resumen">
+            <div class="resumen__textos">
+                <h2>Sobre mi</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci maiores nisi commodi, me gusta el chocolate,<br> libero mollitia tenetur aspernatur eaque ratione eius est tempora.</p>
+                <a href="about/index.html">Leer más</a>
+            </div>
+            <div class="imagen"><i class="fas fa-camera"></i></div>
+        </section>
 
-    <header>
-        <h1 class="header__h1">ENCUENTRA TODO LO QUE NECESITAS AQUÍ</h1>
-        <p class="header__h2">Revisa nuestro stock y planea tu compra <span class="crojo">desde tu casa!</span></p>
-    </header>
-    
-    <section class="productos">
-       <div id="categorias"></div>
-        <div class="productos__container">
-            <div class="productos__card c1">
-                <h3><a href="rutas/productos/index.html#tornilleria">Tornillería</a></h3>
-                <div class="card__filtro brojo"></div>
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="galeria__container">
+                <div class="a">
+                    <img src="recursos/proyectos/futuros.jpg" alt="proyectos futuros">
+                    <a href="galeria/index.html">
+                        <h3>Proyectos futuros</h3>
+                    </a>
+                </div>
+                <div class="b">
+                    <img src="recursos/proyectos/digital.jpg" alt="proyectos digitales">
+                    <a href="galeria/index.html">
+                        <h3>Proyectos digitales</h3>
+                    </a>
+                </div>
+                <div class="c">
+                    <img src="recursos/proyectos/bocetos.jpg" alt="mis bocetos">
+                    <a href="galeria/index.html">
+                        <h3>Bocetos</h3>
+                    </a>
+                </div>
+                <div class="d">
+                    <img src="recursos/proyectos/general.jpg" alt="proyectos generales">
+                    <a href="galeria/index.html">
+                        <h3>General</h3>
+                    </a>
+                </div>
+                <div class="e">
+                    <img src="recursos/proyectos/moderno.jpg" alt="diseños modernos">
+                    <a href="galeria/index.html">
+                        <h3>Diseños modernos</h3>
+                    </a>
+                </div>
+                <div class="f">
+                    <img src="recursos/proyectos/primeros.jpg" alt="primeros proyectos">
+                    <a href="galeria/index.html">
+                        <h3>Primeros diseños</h3>
+                    </a>
+                </div>
             </div>
-            <div class="productos__card c2">
-                <h3><a href="rutas/productos/index.html#pinturas">Pinturas</a></h3>
-                <div class="card__filtro bverde"></div>
+        </section>
+        <section id="contacto">
+            <h2>Contáctame!</h2>
+            <div class="contacto__links">
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="far fa-envelope"></i>
             </div>
-            <div class="productos__card c3">
-                <h3><a href="rutas/productos/index.html#tuberia">Tubería</a></h3>
-                <div class="card__filtro bazul"></div>
-            </div>
-            <div class="productos__card c4">
-                <h3><a href="rutas/productos/index.html#herramientas">Herramientas</a></h3>
-                <div class="card__filtro bmorado"></div>
-            </div>
-            <div class="productos__card c5">
-                <h3><a href="rutas/productos/index.html#todos">Todos los productos</a></h3>
-                <div class="card__filtro bamarillo"></div>
-            </div>
-        </div>
-    </section>
-
-    <div class="middle">
-        <h2>La calidad es lo mas importante!</h2>
+        </section>
+        <footer></footer>
     </div>
-    <section class="destacados">
-        <div id="destacados"></div>
-        <h2>EN DESTAQUE</h2>
-        <div class="destacados__container">
-
-            <button class="destacados__anterior" aria-label="Anterior">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-
-            <div class="destacados__lista">
-                <div class="lista__card">
-                    <img src="recursos/destaques/martillo1.png" alt="">
-                    <p class="card__name">Martillo Bellota</p>
-                    <p class="card__precio">$5.900</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/tornillo.jpg" alt="">
-                    <p class="card__name">Tornillos Negros</p>
-                    <p class="card__precio">$200</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/manguera.png" alt="">
-                    <p class="card__name">Manguera 30m</p>
-                    <p class="card__precio">$14.490</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/Cinta_ductTape.png" alt="">
-                    <p class="card__name">Cinta Pegante Multiuso</p>
-                    <p class="card__precio">$3.490</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/destornillador.png" alt="">
-                    <p class="card__name">Destornillador de Estria</p>
-                    <p class="card__precio">$9.990</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/tubo_roscada.png" alt="">
-                    <p class="card__name">Tubo Roscada 90°</p>
-                    <p class="card__precio">$2.490</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/rollo_cobre.png" alt="">
-                    <p class="card__name">Rollo de Cobre</p>
-                    <p class="card__precio">$12.000</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/ampolleta.png" alt="">
-                    <p class="card__name">Ampolleta Económica</p>
-                    <p class="card__precio">$3.250</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/gotita.jpg" alt="">
-                    <p class="card__name">LA GOTITA MÁGICA</p>
-                    <p class="card__precio">$9.999.999</p>
-                </div>
-                <div class="lista__card">
-                    <img src="recursos/destaques/martillo2.png" alt="">
-                    <p class="card__name">Martillo Portatil</p>
-                    <p class="card__precio">$3.250</p>
-                </div>
-            </div>
-
-            <button class="destacados__siguiente" aria-label="siguiente">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-
-        <div role="tablist" class="destacados__indicadores"></div>
-    </section>
-
-    <section class="nosotros__container">
-        <div id="nosotros"></div>
-        <div class="nosotros__textos">
-            <h2>Sobre nosotros</h2>
-            <p class="crojo">sección en construcción</p>
-            <p>Esperando feedbacks para continuar</p>
-        </div>
-        <div class="nosotros__image">
-            <img src="recursos/en_construccion.png" alt="seccion en construcción">
-            <p>Estamos trabajando en ello. Sea paciente</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>Ferretería Aconcagua | &copy; Todos los derechos reservados</p>
-        <div class="iconos">
-            <a href="https://www.instagram.com/ferreteriaconcagua/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=56123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.facebook.com/ferreteria.aconcagua.5" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        </div>
-    </footer>
-
-    <!-- SCRIPTS -->
-    <script src="scripts/glider.js"></script>
-    <script src="public/fontawesome.js"></script>
-    <script src="public/index.js"></script>
-    <script src="scripts/code.js"></script>
 </body>
 </html>

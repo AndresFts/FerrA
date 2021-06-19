@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------- Menu 102 ---------- */
+menu
+{
+    position: fixed;
+    z-index: 900;
+    width: 60px;
+    height: 100%;
+    background: #006274;
+    transition: .4s;
+    overflow: hidden;
+}
+menu:hover
+{
+    width: 300px;
+}
+.perfil{
+    height: 60px;
+    padding: 10px;
+    transition: inherit;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+menu:hover .perfil
+{
+    height: 200px;
+}
+.perfil__imagen
+{  
+    background: url(../recursos/favicon.png);
+    background-size: cover;
+    width: 33px;
+    height: 33px;
+    margin: auto;
+
+    transition: 0.4s;
+}
+menu:hover .perfil__imagen
+{
+    transform: scale(3.6);
+}
+.perfil h1{
+    font-size: 0;
+    transition: inherit;
+    flex-grow: 0;
+    color: #fff;
+    font-weight: 400;
+    cursor: default;
+    position: relative;
+    bottom: 0;
+}
+menu:hover .perfil h1{
+    font-size: 20px;
+}
+menu ul
+{
+    width: 100%;
+}
+menu ul li
+{
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+menu ul li:hover
+{
+    background: #3496a3;
+}
+menu ul li a
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+menu ul li a .icon
+{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+menu ul li a .icon i
+{
+    font-size: 24px;
+
+}
+menu ul li a .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}

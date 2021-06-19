@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header
+{
+    background: url(../recursos/amongasBG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+}
+
+header h1
+{
+    margin: auto;
+    color: #fff;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+nav
+{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav button
+{
+    border: none;
+    outline: none;
+    width: 60px;
+    margin: 10px;
+    background: #0009;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+nav button:hover
+{
+    background: #000a;
+}
+nav button.active, nav button:active
+{
+    background: #000d;
+}
+.fotos
+{
+    background: #000;
+    padding: 30px;
+    height: 1000px;
+
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 0;
+    gap: 10px;
+}
+.foto
+{
+    height: 100%;
+    width: 100%;
+    background: #bbf;
+}
+
+.fotos
+{
+    grid-template-areas: "f1 f1 f1 f1      "
+                         "f1 f1 f1 f1      "
+                         "f1 f1 f1 f1      "
+                         "f1 f1 f1 f1      "
+                         "f2 f2 f2 f2";
+}
+
+.fotos .f1{grid-area: f1;}
+.fotos .f2{grid-area: f2;}
+.fotos .f3{grid-area: f3;}
+.fotos .f4{grid-area: f4;}
+.fotos .f5{grid-area: f5;}
+.fotos .f6{grid-area: f6;}
+.fotos .f7{grid-area: f7;}
